@@ -32,7 +32,7 @@ module "bastion" {
   key_name = "11st-ce-key-v1"
 
   allow_ip_address = [
-    "58.151.93.9/32", # 강남 echo "$(curl -sL icanhazip.com)/32"
+    "175.126.171.161/32", # seoul-square echo "$(curl -sL icanhazip.com)/32"
   ]
 }
 
