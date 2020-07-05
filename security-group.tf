@@ -1,5 +1,6 @@
 resource "aws_security_group" "this" {
-  name = local.upper_name
+  name        = var.name
+  description = "security group for ${var.name}"
 
   vpc_id = var.vpc_id
 
@@ -34,7 +35,6 @@ resource "aws_security_group" "this" {
   }
 
   tags = {
-    Name = local.upper_name
+    Name = var.name
   }
 }
-
